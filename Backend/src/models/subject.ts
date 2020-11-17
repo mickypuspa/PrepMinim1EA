@@ -5,7 +5,7 @@ import Student, { IStudent } from './student';
 //Interfaz para tratar respuesta como documento
 export interface ISubject extends Document{
     name: string;
-    students: IStudent['_id']; //Relacion son Students
+    students: IStudent['_id']; //Relacion con Students
 }
 
 //Modelo de objeto que se guarda en la BBDD de MongoDB
