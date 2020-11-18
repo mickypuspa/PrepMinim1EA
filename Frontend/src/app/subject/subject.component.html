@@ -1,0 +1,16 @@
+<div class="text">
+    <h1>SUBJECTS</h1>
+  </div>
+  
+  <div class="center">
+    <button (click)="addSubject()" class="button" >Add new subject</button>
+    <button (click)="admin()" class="button"> Back </button>
+  </div>
+  
+  <div class="subjects">
+      <!-- SELECTOR DE COURSE-CARD.COMPONENT.TS -->
+      <app-subject-card *ngFor="let subject of subjects; index as i"
+        [subject]="subject" [subjectIndex]="i">
+      </app-subject-card>  
+  
+  </div>

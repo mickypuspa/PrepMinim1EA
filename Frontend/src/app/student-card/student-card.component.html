@@ -1,6 +1,21 @@
-<div class= "student-card">
+<div class="student-card" *ngIf="student">
 
-    <h1>STUDENT</h1>
-    <button id="text">Student</button>
+    <div class="student-name">
+        Student {{index+1}}: {{student.name}}
+    </div>
+
+    <div class="student-address">
+        Dirección: {{student.address}}
+    </div>
+
+    Telefonos: 
+    <div class="student-phones" *ngFor="let phone of student.phones">
+         <p *ngIf="phone?.value!=null">{{phone.key}} : {{phone.value}} </p>
+    </div>
+    
+    <div class="center">
+        <button (click)="newStudent()" class="button" *ngIf="subjectName!=null">+</button>
+    </div>
 
 </div>
+<br>

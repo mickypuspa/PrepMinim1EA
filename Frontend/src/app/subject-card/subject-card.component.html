@@ -1,6 +1,16 @@
-<div class= "subject-card">
+<div class="subject-card" *ngIf="subject">
 
-    <h1>SUBJECT</h1>
-    <button id="text">Subject</button>
+    <div class="subject-title">
+        <h2>{{subjectIndex+1 + ' - ' + subject.name}}</h2>
+    </div>
+
+    <div class="students">
+        <app-student-card *ngFor="let student of subject.students; index as i"
+        [student]="student" [index]="i"></app-student-card>
+    </div>
+
+    <div class="center">
+        <button (click)="addStudent(subject.name)" class="button">Add new student</button>
+    </div>
 
 </div>

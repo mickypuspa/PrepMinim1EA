@@ -1,19 +1,9 @@
-.subject-title{
-    text-align: center;
-    font-size: large;
-    font-weight: bold;
-    background-color: #837e72;
-}
-
-.students {
-    margin: 15px;
-}
 
 .button {
-    background-color: #b88a0c; /*Gold*/
+    background-color: #b88a0c; /* Gold */
     border: black;
     color: white;
-    padding: 5px 12px;
+    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -22,8 +12,4 @@
     cursor: pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
-}
-
-.center {
-    text-align: center;
 }
